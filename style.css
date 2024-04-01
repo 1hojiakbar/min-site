@@ -9,6 +9,8 @@
 /* body */
 body {
   background: #222831;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 button {
@@ -32,6 +34,7 @@ button {
 .name {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
 }
 
 /* year and age style */
@@ -52,11 +55,15 @@ button {
 .photo > img {
   width: 50%;
   height: 50%;
-  box-shadow: rgba(107, 107, 107, 0.25) 0px 50px 100px -20px,
-    rgba(67, 67, 67, 0.3) 0px 30px 60px -30px,
-    rgba(128, 128, 128, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(153, 152, 152, 0.19) 0px 10px 20px,
+    rgba(142, 142, 142, 0.23) 0px 6px 6px;
   border-radius: 0.6rem;
   cursor: pointer;
+  transition: all 500ms;
+}
+
+.photo > img:hover {
+  width: 67%;
 }
 
 /* about section */
@@ -73,6 +80,7 @@ button {
   padding: 1rem;
   background-color: #323944;
   border-radius: 0.3rem;
+  overflow: hidden;
 }
 
 .about::selection {
