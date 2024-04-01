@@ -47,8 +47,14 @@ button {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
+  text-shadow: 0 0 30px #000;
   animation-name: show-move;
   animation-duration: 990ms;
+}
+
+.name::selection {
+  background-color: black;
+  color: white;
 }
 
 /* year and age style */
@@ -59,6 +65,12 @@ button {
   font-family: Arial, Helvetica, sans-serif;
   animation-name: show-move;
   animation-duration: 990ms;
+}
+
+.name + h3::selection,
+.name + h3 + p::selection {
+  background-color: black;
+  color: white;
 }
 
 /* photo section */
