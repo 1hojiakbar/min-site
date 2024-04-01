@@ -19,6 +19,18 @@ button {
 
 /* =================================================================== */
 
+/* show move animation */
+@keyframes show-move {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* main container */
 .container {
   display: flex;
@@ -35,6 +47,8 @@ button {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
+  animation-name: show-move;
+  animation-duration: 990ms;
 }
 
 /* year and age style */
@@ -43,6 +57,8 @@ button {
   font-weight: 500;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  animation-name: show-move;
+  animation-duration: 990ms;
 }
 
 /* photo section */
@@ -60,6 +76,8 @@ button {
   border-radius: 0.6rem;
   cursor: pointer;
   transition: all 500ms;
+  animation-name: show-move;
+  animation-duration: 990ms;
 }
 
 .photo > img:hover {
