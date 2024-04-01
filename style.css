@@ -47,3 +47,14 @@ button {
   width: 50%;
   height: 50%;
 }
+
+.about-container {
+  width: 80%;
+}
+
+.about {
+  font-size: larger;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 30px;
+}
